@@ -1,0 +1,235 @@
+/*------------------------------CSS Cuerpo general--------------------------------*/
+:root {
+    /*Reseteamos medidas y asigamos variables comunes*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(BreakingBad);
+}
+    /*Caracteristicas cuerpo general de todas las paginas*/
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+    /*Extraccion fuente externa para titulo*/
+@font-face {
+    font-family: "BreakingBad";
+    src: url(../fonts/BreakingBad.ttf);
+}
+
+/*--------------------------------------------CSS INDEX------------------------------------*/
+
+    /*Imagen de fondo de pagina web*/
+.index{
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+    /*Imagen añadida de cabecera de pagina index.html*/
+#logo{
+    background-image: url(../img/logo.PNG);
+    background-size: cover;
+    display: block;
+    margin:auto;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px; 
+}
+    /*Texto con fuente externa añadida*/
+.texto{
+    font-family: 'BreakingBad';
+    font-weight: bold;
+    color:white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+}
+    /*Caracteristicas del poster para mapeado*/
+#poster{    
+    display: block;
+    margin:auto;
+    width: 700px;
+    height: 300px;
+    border: 10px outset brown;
+    border-radius: 22px;
+}
+
+/*----------------------------------------CSS FORMULARIO-----------------------------------*/
+
+    /*Encabezado formulario*/
+h2 {
+    font-family: Helvetica;
+    font-weight: 750;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+    /*Contenedor de todo lo compuesto por formulario */
+.contenedor{
+    width: 80%;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);    
+}
+    /*ID unico para el formulario */
+#formulario{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 500);
+   background: rgba(255, 255, 255, 0.303);
+}
+    /*Secciones individuales de formulario*/
+fieldset{
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 5px;   
+    margin-bottom: 2px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.7); /* Opacidad para ver el fondo */
+}
+    /*Titulo de cada parte del formulario*/
+legend{
+    font-family: Helvetica;
+    font-size: 15px;
+    font-weight: 800;
+    padding-top: 10px;
+    color: #444;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+    /*Configuraciones de cada parte del formulario*/
+.insert{
+    padding-bottom: 5px;
+    padding-right: 50px;
+    padding: auto;
+    margin-left: 10px;
+}
+label,input {
+    line-height: 1.5;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 2px;
+    font-size: 10px;
+ }
+ textarea{
+    width: 95%;  
+    height: 90px;
+ }
+ button {
+    width: 70px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+button[type="reset"] {
+    background-color: #dc3545;
+    color: white;
+}
+button[type="reset"]:hover {
+    background-color: #c82333;
+}
+
+/*---------------------------------------CSS TABLA PERIODICA-----------------------------------------*/
+
+/*Formato contenedor general*/
+.container {
+    justify-content: center;
+    gap: 20px;
+}
+/*Caracteristicas de la tabla periodica*/
+table{
+    width: auto;
+    max-width: auto;
+    table-layout: fixed;
+    background-color: #2B2D23;            
+    border-collapse: separate;            
+    border-spacing: 8px;
+    padding: 3px;
+    margin-top: 20px;
+}
+/*Configuracion de las celdas individuales*/
+td {
+    width: 65px;
+    height: 70px;
+    padding: 2px;
+    text-align: center;
+    overflow: hidden;
+    text-align: center;
+}
+/*Configuracion  de las imagenes dentro de las celdas*/
+td img {
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+}
+/*Configuracion de las letras grandes en las celdas */
+h1 {
+    font-family: Helvetica;
+    font-size: 40px;
+    text-align: center;
+    margin: 5px 5px;
+    color: #34362e;
+}
+/*Configuracion de las letras pequeñas en las celdas*/
+h6 {
+    font-family: Helvetica;
+    font-size: 10px;
+    text-align: center;
+    margin: 5px 5px;
+    color: #34362e;
+}
+/*Configuracion comun de la ocupacion de las letras en las celdas*/
+td h1, td h6 {
+    line-height: 1;
+    margin: 0;
+}
+
+td h6{
+    margin-top: 10px;
+}
+/*Configuracion de las celdas vacias-----no necesarias pero introducidas para dar mas contexto*/
+.vacia {
+    background-color: transparent;
+    border: none;
+}
+/*Configuracion colores en celdas*/
+.color1 { background-color: #B8DD13; }
+.color2 { background-color: #C1C723; }
+.color3 { background-color: #89A418; }
+.color4 { background-color: #C9E746; }
+.color5 { background-color: #8b90627a; }
+.color6 { background-color: #899080; }
+.color7 { background-color: #D4E977; }
+.color8 { background-color: #EFF6CA; }
+.color9 { background-color: #627124; }
+.color10 { background-color: #AB8ECF; }
+
+/*Configuracion unica de la imagen completa en celda*/
+#image-cell {
+background-image: url(../img/hankschrader.png);
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+width: 72px;
+height: auto;
+overflow: hidden;
+}
+
